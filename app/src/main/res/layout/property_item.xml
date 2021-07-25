@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/property_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_margin">
+
+    <com.kr.commons.views.MyTextView
+        android:id="@+id/property_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름:흰범.jpeg"
+        android:textSize="@dimen/smaller_text_size"/>
+
+</LinearLayout>

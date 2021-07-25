@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/directories_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/cam_setting_icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="300dp"
+        android:gravity="center|top"
+        android:clickable="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:background="@android:color/black"
+        >
+
+        <ImageView
+            android:id="@+id/open_setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:src="@drawable/ic_outline_settings_24" />
+
+        <ImageView
+            android:id="@+id/open_camera"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_outline_camera_alt_24" />
+    </LinearLayout>
+
+    <!-- Thumbnail list recycler view-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/directories_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

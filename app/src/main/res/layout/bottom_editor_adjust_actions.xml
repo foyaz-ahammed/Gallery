@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_actions_contrast_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@+id/adjust_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="50dp"
+        app:isb_progress="0"
+        app:isb_seek_smoothly="true"
+        app:isb_indicator_text_size="12sp"
+        app:isb_show_track="true"
+        app:isb_show_indicator="none"
+        app:isb_show_tick_marks_type="oval"
+        app:isb_show_thumb_text="true"
+        app:isb_thumb_size="26dp"
+        app:isb_thumb_color="@android:color/white"
+        app:isb_progress_value_float="false"
+        app:isb_ticks_count="11"
+        app:isb_show_tick_texts="false"
+        app:isb_tick_texts_color="@android:color/white"
+        app:isb_tick_texts_size="12sp"
+        app:isb_tick_marks_color="@android:color/white"
+        app:isb_key_ticks_count="1"
+        app:isb_tick_marks_size="4dp"
+        android:paddingTop="20dp"/>
+
+    <com.kr.commons.views.MyRecyclerView
+        android:id="@+id/bottom_actions_adjust_rv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_adjust_rv_height"
+        android:background="@color/crop_image_view_background"
+        android:orientation="horizontal"
+        android:overScrollMode="never"
+        app:layoutManager="com.kr.commons.views.MyLinearLayoutManager"/>
+
+</LinearLayout>

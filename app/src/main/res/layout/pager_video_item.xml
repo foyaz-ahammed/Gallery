@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/video_preview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+    <com.alexvasilkov.gestures.GestureImageView
+        android:id="@+id/gestures_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.kr.gallery.pro.views.MediaSideScroll
+        android:id="@+id/video_volume_controller"
+        android:layout_width="@dimen/media_side_slider_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"/>
+
+    <com.kr.gallery.pro.views.MediaSideScroll
+        android:id="@+id/video_brightness_controller"
+        android:layout_width="@dimen/media_side_slider_width"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/video_play_button"
+        android:layout_width="@dimen/play_outline_size_big"
+        android:layout_height="@dimen/play_outline_size_big"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:src="@drawable/ic_play_outline_vector"/>
+
+    <ImageView
+        android:id="@+id/panorama_outline"
+        android:layout_width="@dimen/play_outline_size_big"
+        android:layout_height="@dimen/play_outline_size_big"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:src="@drawable/ic_panorama_outline"
+        android:visibility="gone"/>
+
+    <include layout="@layout/bottom_video_time_holder"/>
+
+    <TextView
+        android:id="@+id/slide_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:alpha="0"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingTop="@dimen/medium_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingBottom="@dimen/medium_margin"
+        android:textColor="@color/content_color"
+        android:textSize="@dimen/extra_big_text_size"/>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    android:rowCount="1"
+    >
+    <TextView
+        android:id="@+id/btn_paint_brush"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/baseline_brush_24"
+        android:textAlignment="center"
+        android:text="@string/doodle_bar_paint_brush"
+        android:onClick="onClick"
+        android:layout_columnWeight="1"
+        android:textColor="@drawable/text_selector"/>
+
+    <TextView
+        android:id="@+id/btn_holl_rect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/doodle_rect_selector"
+        android:textAlignment="center"
+        android:text="@string/doodle_bar_rect"
+        android:onClick="onClick"
+        android:layout_columnWeight="1"
+        android:textColor="@drawable/text_selector"/>
+
+    <TextView
+        android:id="@+id/btn_holl_circle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/doodle_circle_selector"
+        android:textAlignment="center"
+        android:text="@string/doodle_bar_circle"
+        android:onClick="onClick"
+        android:layout_columnWeight="1"
+        android:textColor="@drawable/text_selector"/>
+
+    <TextView
+        android:id="@+id/btn_arrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/doodle_arrow_selector"
+        android:textAlignment="center"
+        android:onClick="onClick"
+        android:text="@string/doodle_bar_arrow"
+        android:layout_columnWeight="1"
+        android:textColor="@drawable/text_selector"/>
+</GridLayout>

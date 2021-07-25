@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#000000</color> // #0a7f65
+    <color name="theme_dark_background_color">#000000</color>
+    <color name="theme_dark_text_color">#FFFFFF</color>
+    <color name="activated_item_foreground">#55000000</color> // Pitch viewer background color
+    <color name="dark_grey">@color/color_primary</color> // Menu bar color when Item selected to rename or delete.
+    <color name="default_background_color">@color/theme_dark_background_color</color>
+    <color name="default_text_color">@color/theme_dark_text_color</color>
+    <color name="divider_grey">#88808080</color> // Pitch viewer outline color
+    <color name="md_orange_700">@color/color_primary</color> // Tab underline color
+    <color name="theme_light_background_color">@android:color/white</color> // Navigation color
+
+    <color name="button_color">#FFFFFF</color>
+</resources>

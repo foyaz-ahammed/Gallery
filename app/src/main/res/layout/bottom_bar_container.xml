@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layout_alignParentBottom="true">
+
+    <include
+        android:id="@+id/bottom_editor_doodle_actions"
+        layout="@layout/bottom_editor_doodle_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/second_action_bottom_margin"
+        android:layout_above="@id/bottom_close_check_bar"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/bottom_editor_mosaic_actions"
+        layout="@layout/bottom_editor_mosaic_actions"/>
+
+    <include
+        android:id="@+id/bottom_more_draw_color"
+        layout="@layout/bottom_more_draw_color"/>
+
+    <include
+        android:id="@+id/bottom_more_draw_style"
+        layout="@layout/bottom_more_draw_style"/>
+
+    <include
+        android:id="@+id/bottom_more_draw_size"
+        layout="@layout/bottom_more_draw_size"/>
+
+    <include
+        android:id="@+id/bottom_close_check_bar"
+        layout="@layout/bottom_close_check_bar"/>
+
+    <include
+        android:id="@+id/bottom_editor_more_actions"
+        layout="@layout/bottom_editor_more_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/second_action_bottom_margin"
+        android:layout_above="@+id/bottom_editor_primary_actions"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/bottom_editor_adjust_actions"
+        layout="@layout/bottom_editor_adjust_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_editor_primary_actions"
+        android:layout_marginBottom="@dimen/second_action_bottom_margin"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/bottom_editor_filter_actions"
+        layout="@layout/bottom_editor_filter_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/second_action_bottom_margin"
+        android:layout_above="@+id/bottom_editor_primary_actions"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/bottom_editor_crop_actions"
+        layout="@layout/bottom_editor_crop_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/second_action_bottom_margin"
+        android:layout_above="@+id/bottom_editor_primary_actions"/>
+
+    <include
+        android:id="@+id/bottom_editor_primary_actions"
+        layout="@layout/bottom_editor_primary_actions"/>
+
+    <View
+        android:id="@+id/bottom_bar_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"/>
+</RelativeLayout>

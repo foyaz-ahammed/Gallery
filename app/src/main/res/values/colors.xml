@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#000000</color>
+    <color name="color_primary_dark">#FF3C8CE7</color>
+    <color name="theme_dark_text_color">@color/content_color</color>
+    <color name="activated_item_foreground">#55afafaf</color>
+    <color name="default_background_color">@android:color/black</color>
+    <color name="divider_grey">#88808080</color>
+
+    <color name="dark_grey">@color/color_primary</color>
+    <color name="default_text_color">@color/theme_dark_text_color</color>
+    <color name="md_orange_700">@color/color_primary</color>
+    <color name="theme_dark_background_color">@color/default_text_color</color> // Setting Triple dots color
+
+    <color name="nav_color">#000000</color>
+
+    <color name="actionbar_menu_icon">#454545</color>
+    <color name="crop_image_view_background">#BB000000</color>
+    <color name="circle_black_background">#66000000</color>
+
+    <color name="button_color">#000000</color>
+
+    <color name="disabledTextColor">#808080</color>
+    <color name="bottomSheetColor">#AEAEAE</color>
+    <color name="disabledIconColor">#60FFFFFF</color>
+    <color name="bottomAppbarBack">#1C1C1C</color>
+    <color name="activeText">#1371BA</color>
+
+    <color name="tab_color_selected">#1371BA</color>
+    <color name="tab_color_unselected">#808080</color>
+
+    <color name="text_selected_color">#5555ff</color>
+
+    <!-- Common text color used(white) -->
+    <color name="common_text_color">#efefef</color>
+    <color name="common_primary_color">#1371BA</color>
+    <color name="common_background_color">#000000</color>
+    <color name="common_light_bg_color">#80121212</color>
+    <color name="common_icon_color">#e4e4e4</color>
+
+    <!--Crop View-->
+    <color name="ucrop_color_default_crop_grid">#80ffffff</color>
+    <color name="ucrop_color_default_crop_frame">#ffffff</color>
+    <color name="ucrop_color_default_dimmed">#8c000000</color>
+    <color name="ucrop_color_default_logo">#4f212121</color>
+
+    <!-- Video View-->
+    <color name="controller_bg_dark">#66000000</color>
+    <color name="controller_bg_light">#00000000</color>
+
+    <color name="video_setting_highlight_color">#FF7F00</color>
+</resources>

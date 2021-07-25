@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_edit_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/adjust_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar_container">
+
+        <com.kr.gallery.pro.views.CanvasSpliner
+            android:id="@+id/rgb_curve_canvas"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/rgb_channel_spinner"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="#444444"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:hint="RGB"
+            android:textColor="@android:color/white"
+            android:textSize="14.5sp"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_divider_color="@android:color/darker_gray"
+            app:spinner_divider_show="true"
+            app:spinner_divider_size="0.4dp"
+            app:spinner_popup_animation="normal"
+            app:spinner_popup_background="#444444"
+            app:spinner_popup_elevation="14dp" />
+
+        <TextView
+            android:id="@+id/txt_adjust_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:textColor="#dddddd"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:shadowColor="#000000"
+            android:text="Original"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/default_image_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar_container">
+        <ImageView
+            android:id="@+id/default_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txt_filter_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="40sp"
+            android:textColor="#dddddd"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:shadowColor="#000000"
+            android:text="Original"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/compare_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar_container"
+        android:visibility="gone"/>
+
+    <com.yalantis.ucrop.view.UCropView
+        android:id="@+id/ucrop_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar_container"/>
+    <include
+        android:id="@+id/doodle_image_view"
+        layout="@layout/doodle_image_view"/>
+
+    <ImageView
+        android:id="@+id/more_draw_thickness_circle"
+        android:layout_width="@dimen/more_draw_thickness_size"
+        android:layout_height="@dimen/more_draw_thickness_size"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:clickable="false"
+        android:contentDescription="@null"
+        android:padding="@dimen/small_margin"
+        android:background="@drawable/color_picker_width_circle"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/bottom_bar_container"
+        layout="@layout/bottom_bar_container"/>
+
+    <TextView
+        android:id="@+id/btn_compare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/compare_selector"
+        android:text="@string/compare"
+        android:textAllCaps="true"
+        android:clickable="true"
+        />
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progress_spinner"
+        android:layout_margin="10dp"
+        android:layout_width="@dimen/loading_view_size"
+        android:layout_height="@dimen/loading_view_size"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_centerInParent="true"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:indicatorColor="@android:color/white"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

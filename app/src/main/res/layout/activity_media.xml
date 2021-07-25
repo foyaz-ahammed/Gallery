@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/media_action_bar"
+        >
+
+        <RelativeLayout
+            android:id="@+id/media_selected_counts_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/media_back_from_select"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_left_arrow"
+                android:foreground="@drawable/circle_ripple"
+                android:clickable="true"
+                app:tint="@color/common_text_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/media_display_selected_items"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/activity_title_text_size"
+                    android:textColor="#1371BA"
+                    android:text="1 Selected"/>
+
+                <TextView
+                    android:id="@+id/media_select_all_items"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/activity_title_text_size"
+                    android:textColor="@color/disabledTextColor"
+                    android:text="@string/select_all"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/media_dir_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/common_primary_color"
+                android:textSize="@dimen/activity_title_text_size"
+                android:gravity="center"
+                android:text="image_name"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/media_action_bar"
+        android:id="@+id/media_holder"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.kr.commons.views.MyRecyclerView
+            android:id="@+id/media_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layoutManager=".custom.NotifyingGridLayoutManager"
+            app:spanCount="@integer/media_columns_vertical_scroll" />
+
+        <com.kr.commons.views.FastScroller
+            android:id="@+id/media_vertical_fastscroller"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+
+            <include layout="@layout/fastscroller_handle_vertical" />
+
+        </com.kr.commons.views.FastScroller>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/bottom_sheet_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nav_color">#000000</color>
+    <color name="track_activated">#2A364B</color>
+    <color name="content_color">#FFFFFF</color>
+    <color name="color_primary">#000000</color>
+    <color name="color_primary_dark">#000000</color>
+    <color name="color_accent">#FFFFFF</color>
+
+    <color name="tab_icon_unselected_color">@color/md_grey_500_dark</color>
+    <color name="tab_icon_selected_color">@android:color/white</color>
+</resources>

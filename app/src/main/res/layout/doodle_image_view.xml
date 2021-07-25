@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/bottom_bar_container"
+    android:visibility="gone">
+
+    <FrameLayout
+        android:id="@+id/doodle_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:id="@+id/doodle_selectable_edit_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/item_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:background="#88444444"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:padding="5dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="100%"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#88000000"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/doodle_selectable_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/doodle_btn_effect_rect_pressed_black"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/doodle_bottom"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/doodle_selectable_top"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/doodle_btn_effect_rect_pressed_black"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/doodle_top"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/doodle_selectable_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/doodle_btn_effect_rect_pressed_black"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/doodle_remove"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

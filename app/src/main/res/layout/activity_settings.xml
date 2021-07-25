@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_left_arrow"
+            android:foreground="@drawable/circle_ripple"
+            android:clickable="true"
+            app:tint="@color/common_text_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-30dp"
+            android:gravity="center"
+            android:textColor="@color/common_primary_color"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+            android:text="@string/settings"
+            android:textSize="@dimen/activity_title_text_size"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/settings_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/settings_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 그림설정 -->
+            <com.kr.commons.views.MyTextView
+                android:id="@+id/picture_setting_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bigger_margin"
+                android:layout_marginTop="@dimen/section_margin"
+                android:text="@string/picture_setting"
+                android:textAllCaps="true"
+                android:textSize="@dimen/normal_text_size"
+                android:textColor="@color/disabledTextColor"/>
+
+            <!-- 사진첩에 그림추가 -->
+            <RelativeLayout
+                android:id="@+id/settings_manage_add_pictures_to_cover_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingStart="@dimen/normal_margin"
+                android:paddingTop="@dimen/activity_margin"
+                android:paddingEnd="@dimen/normal_margin"
+                android:paddingBottom="@dimen/activity_margin"
+                >
+
+                <com.kr.commons.views.MyTextView
+                    android:id="@+id/manage_add_pictures_to_cover_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/medium_margin"
+                    android:text="@string/add_pictures_to_cover"
+                    android:textSize="@dimen/bigger_text_size" />
+                <com.kr.commons.views.MyTextView
+                    android:id="@+id/manage_add_pictures_to_cover_description"
+                    android:layout_below="@id/manage_add_pictures_to_cover_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/medium_margin"
+                    android:text="@string/add_pictures_to_cover_description" />
+
+            </RelativeLayout>
+
+            <!-- 기타 -->
+            <com.kr.commons.views.MyTextView
+                android:id="@+id/others_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bigger_margin"
+                android:layout_marginTop="@dimen/section_margin"
+                android:text="@string/other"
+                android:textAllCaps="true"
+                android:textSize="@dimen/normal_text_size"
+                android:textColor="@color/disabledTextColor" />
+
+            <!-- 숨긴 등록부관리 -->
+            <RelativeLayout
+                android:id="@+id/settings_manage_hidden_folders_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingStart="@dimen/normal_margin"
+                android:paddingTop="@dimen/activity_margin"
+                android:paddingEnd="@dimen/normal_margin"
+                android:paddingBottom="@dimen/activity_margin">
+
+                <com.kr.commons.views.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="@dimen/medium_margin"
+                    android:text="@string/manage_hidden_folders"
+                    android:textSize="@dimen/bigger_text_size"/>
+            </RelativeLayout>
+
+            <!-- 정보 -->
+            <RelativeLayout
+                android:id="@+id/settings_manage_about_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingStart="@dimen/normal_margin"
+                android:paddingTop="@dimen/activity_margin"
+                android:paddingEnd="@dimen/normal_margin"
+                android:paddingBottom="@dimen/activity_margin">
+
+                <com.kr.commons.views.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="@dimen/medium_margin"
+                    android:text="@string/about"
+                    android:textSize="@dimen/bigger_text_size" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

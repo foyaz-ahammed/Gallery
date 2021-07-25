@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/photo_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.alexvasilkov.gestures.GestureImageView
+        android:id="@+id/gestures_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+        android:id="@+id/subsampling_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/panorama_outline"
+        android:layout_width="@dimen/play_outline_size_big"
+        android:layout_height="@dimen/play_outline_size_big"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_panorama_outline"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/photo_portrait_stripe_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/portrait_photos_stripe_height"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/photo_portrait_stripe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            app:layoutManager="com.kr.commons.views.MyLinearLayoutManager" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

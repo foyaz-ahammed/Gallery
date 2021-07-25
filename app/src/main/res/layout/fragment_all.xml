@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/directories_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/cam_setting_icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:clickable="true"
+        android:elevation="100dp"
+        android:gravity="center"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:id="@+id/open_setting"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_outline_settings_24"/>
+
+        <ImageView
+            android:id="@+id/open_camera"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_outline_camera_alt_24"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/directories_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.kr.commons.views.MyTextView
+            android:id="@+id/directories_switch_searching"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="@dimen/activity_margin"
+            android:textColor="@color/color_primary"
+            android:text="@string/switch_to_file_search"
+            android:visibility="gone"/>
+
+        <com.kr.commons.views.MyTextView
+            android:id="@+id/directories_empty_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/directories_switch_searching"
+            android:gravity="center_horizontal"
+            android:alpha="0.8"
+            android:textStyle="italic"
+            android:paddingStart="@dimen/activity_margin"
+            android:paddingTop="@dimen/activity_margin"
+            android:paddingEnd="@dimen/activity_margin"
+            android:text="@string/no_media_with_filters"
+            android:textSize="@dimen/bigger_text_size"
+            android:visibility="gone"/>
+
+        <com.kr.commons.views.MyTextView
+            android:id="@+id/directories_empty_placeholder_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/directories_empty_placeholder"
+            android:layout_centerHorizontal="true"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/activity_margin"
+            android:text="@string/change_filters_underlined"
+            android:textSize="@dimen/bigger_text_size"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <com.kr.commons.views.MyRecyclerView
+        android:id="@+id/directories_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layoutManager="com.kr.commons.views.MyGridLayoutManager"
+        app:spanCount="@integer/directory_columns_vertical_scroll"/>
+
+</FrameLayout>

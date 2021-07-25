@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingVertical="10dp"
+    android:layout_above="@id/bottom_close_check_bar"
+    android:columnCount="8"
+    android:rowCount="1"
+    android:visibility="gone"
+    >
+    <LinearLayout
+        android:id="@+id/btn_mosaic_level_1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:onClick="onClick">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/doodle_size_1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_mosaic_level_2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:onClick="onClick">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/doodle_size_2"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_mosaic_level_3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:onClick="onClick">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/doodle_size_3"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_columnWeight="8.7">
+        <com.kr.commons.views.MySeekBar
+            android:id="@+id/more_mosaic_thickness_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:min="30"
+            android:max="100"/>
+    </LinearLayout>
+
+</GridLayout>

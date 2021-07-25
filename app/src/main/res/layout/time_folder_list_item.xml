@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/time_folder_item_height"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="4dp">
+
+    <!-- Image list slider view -->
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderAutoCycleDirection="right"
+        app:sliderIndicatorEnabled="false"
+        app:sliderScrollTimeInSec="1" />
+
+    <TextView
+        android:background="#8A000000"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/time_folder_item_text_size"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        >
+        <TextView
+            android:id="@+id/date_label"
+            android:layout_width="@dimen/date_label_width"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/time_folder_item_text_size"
+            android:text="2020.12.12"
+            />
+
+        <TextView
+            android:id="@+id/time_label"
+            android:layout_width="@dimen/time_label_width"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/time_folder_item_text_size"
+            android:text="10:30"
+            />
+
+        <TextView
+            android:id="@+id/counts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/time_folder_item_text_size"
+            android:text="1"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/video_overlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/video_stripe"
+        app:tint="@android:color/black" />
+
+</RelativeLayout>

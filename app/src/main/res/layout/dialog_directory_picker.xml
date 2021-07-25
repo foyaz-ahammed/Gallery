@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/directories_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_from_move"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_left_arrow"
+            android:foreground="@drawable/circle_ripple"
+            android:clickable="true"
+            app:tint="@color/common_text_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-30dp"
+            android:gravity="center"
+            android:textColor="@color/common_primary_color"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+            android:text="@string/move"
+            android:textSize="@dimen/activity_title_text_size"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/directories_grid_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.kr.commons.views.MyRecyclerView
+            android:id="@+id/directories_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layoutManager="com.kr.commons.views.MyGridLayoutManager"
+            app:spanCount="@integer/directory_columns_vertical_scroll"/>
+
+        <com.kr.commons.views.FastScroller
+            android:id="@+id/directories_vertical_fastscroller"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="@dimen/normal_margin">
+
+            <include layout="@layout/fastscroller_handle_vertical"/>
+
+        </com.kr.commons.views.FastScroller>
+    </RelativeLayout>
+
+</LinearLayout>

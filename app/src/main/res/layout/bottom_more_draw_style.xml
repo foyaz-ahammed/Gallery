@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_actions_height"
+    android:layout_above="@id/bottom_close_check_bar"
+    android:visibility="gone">
+    <ImageView
+        android:id="@+id/more_draw_style_rect"
+        android:layout_width="@dimen/crop_draw_style_button_size"
+        android:layout_height="@dimen/crop_draw_style_button_size"
+        android:padding="2dp"
+        android:layout_marginHorizontal="3dp"
+        android:src="@drawable/brush_rect"
+        android:layout_gravity="center"
+        android:background="@drawable/button_wh_border_background"
+        />
+
+    <ImageView
+        android:id="@+id/more_draw_style_circle"
+        android:layout_width="@dimen/crop_draw_style_button_size"
+        android:layout_height="@dimen/crop_draw_style_button_size"
+        android:layout_marginHorizontal="3dp"
+        android:src="@drawable/brush_circle"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/more_draw_style_blur_circle"
+        android:layout_width="@dimen/crop_draw_style_button_size"
+        android:layout_height="@dimen/crop_draw_style_button_size"
+        android:layout_marginHorizontal="3dp"
+        android:src="@drawable/brush_blur_circle"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/more_draw_style_blur_brush"
+        android:layout_width="@dimen/crop_draw_style_button_size"
+        android:layout_height="@dimen/crop_draw_style_button_size"
+        android:layout_marginHorizontal="3dp"
+        android:src="@drawable/brush_blur_brush"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/more_draw_style_blur_dots"
+        android:layout_width="@dimen/crop_draw_style_button_size"
+        android:layout_height="@dimen/crop_draw_style_button_size"
+        android:layout_marginHorizontal="3dp"
+        android:src="@drawable/brush_blur_dots"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

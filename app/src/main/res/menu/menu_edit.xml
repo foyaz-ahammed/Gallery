@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/doodle_menu_group"
+        android:visible="false">
+        <item
+            android:id="@+id/menu_doodle_undo"
+            android:icon="@drawable/ic_undo_vector"
+            android:title="@string/undo"
+            app:showAsAction="always"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/menu_doodle_redo"
+            android:icon="@drawable/ic_redo_vector"
+            android:title="@string/redo"
+            app:showAsAction="always"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/menu_doodle_edit"
+            android:icon="@drawable/baseline_open_with_24"
+            android:title="@string/doodle_edit"
+            app:showAsAction="always"/>
+
+        <item
+            android:id="@+id/menu_doodle_magnifier"
+            android:icon="@drawable/baseline_search_24"
+            android:title="@string/doodle_magnifier"
+            app:showAsAction="always" />
+    </group>
+
+    <group
+        android:id="@+id/edit_menu_group">
+        <item
+            android:id="@+id/menu_undo"
+            android:icon="@drawable/ic_undo_vector"
+            android:title="@string/undo"
+            android:enabled="false"
+            app:showAsAction="always"/>
+
+        <item
+            android:id="@+id/menu_redo"
+            android:icon="@drawable/ic_redo_vector"
+            android:title="@string/redo"
+            android:enabled="false"
+            app:showAsAction="always"/>
+
+        <item
+            android:id="@+id/menu_save"
+            android:title="@string/save"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/menu_reset"
+            android:title="@string/menu_edit_reset"
+            app:showAsAction="never"/>
+    </group>
+</menu>

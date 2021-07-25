@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_slider_mainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="@color/dialog_bg_color"
+    app:cardCornerRadius="50dp">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progress"
+        android:layout_margin="10dp"
+        android:layout_width="@dimen/loading_view_size"
+        android:layout_height="@dimen/loading_view_size"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_gravity="center"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:indicatorColor="@android:color/white"
+        />
+
+    <ImageView
+        android:id="@+id/add_new_paths"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/ic_baseline_create_new_folder_24"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/sliderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderAutoCycleDirection="right"
+        app:sliderIndicatorEnabled="false"
+        app:sliderScrollTimeInSec="1" />
+
+</androidx.cardview.widget.CardView>

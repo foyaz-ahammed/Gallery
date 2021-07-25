@@ -1,0 +1,11 @@
+<resources>
+    <integer name="directory_columns_vertical_scroll">1</integer>
+    <integer name="directory_columns_horizontal_scroll">3</integer>
+    <integer name="media_columns_vertical_scroll">3</integer>
+    <integer name="media_columns_horizontal_scroll">4</integer>
+
+    <!-- Camera,Settings icon view animate duration -->
+    <integer name="cam_settings_animate_duration">300</integer>
+
+    <integer name="default_sorting">33794</integer>
+</resources>

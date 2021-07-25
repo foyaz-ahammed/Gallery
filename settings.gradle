@@ -1,0 +1,1 @@
+include ':app', ':commons', ':indicatorseekbar', ':autoimageslider', ':playerbase', ':gpu-image-plus'

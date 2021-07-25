@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/btn_doodle_size"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_columnWeight="1"
+        android:layout_marginEnd="6dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:background="@drawable/right_divider"
+        android:onClick="onClick">
+        <ImageView
+            android:id="@+id/doodle_size_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/doodle_size_1"
+            android:backgroundTint="@android:color/white"/>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp">
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_1"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#ffffff"
+                android:onClick="onClick"
+                android:tag="doodle_color_#ffffff"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_2"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#cccccc"
+                android:onClick="onClick"
+                android:tag="doodle_color_#cccccc"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_3"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#808080"
+                android:onClick="onClick"
+                android:tag="doodle_color_#808080"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_4"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#382e2d"
+                android:onClick="onClick"
+                android:tag="doodle_color_#382e2d"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_5"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#000000"
+                android:onClick="onClick"
+                android:tag="doodle_color_#000000"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_6"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#7a0400"
+                android:onClick="onClick"
+                android:tag="doodle_color_#7a0400"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_7"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#cc0001"
+                android:onClick="onClick"
+                android:tag="doodle_color_#cc0001"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_8"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#ff3737"
+                android:onClick="onClick"
+                android:tag="doodle_color_#ff3737"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_9"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#9d3729"
+                android:onClick="onClick"
+                android:tag="doodle_color_#9d3729"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_10"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#ff7f00"
+                android:onClick="onClick"
+                android:tag="doodle_color_#ff7f00"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_11"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#ffa33a"
+                android:onClick="onClick"
+                android:tag="doodle_color_#ffa33a"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_12"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#f7c200"
+                android:onClick="onClick"
+                android:tag="doodle_color_#f7c200"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_13"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#a3e400"
+                android:onClick="onClick"
+                android:tag="doodle_color_#a3e400"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_14"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#7caa0a"
+                android:onClick="onClick"
+                android:tag="doodle_color_#7caa0a"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_15"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#077c38"
+                android:onClick="onClick"
+                android:tag="doodle_color_#077c38"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_16"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#175445"
+                android:onClick="onClick"
+                android:tag="doodle_color_#175445"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_17"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#7fd7fb"
+                android:onClick="onClick"
+                android:tag="doodle_color_#7fd7fb"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_18"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#009afa"
+                android:onClick="onClick"
+                android:tag="doodle_color_#009afa"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_19"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#0265cb"
+                android:onClick="onClick"
+                android:tag="doodle_color_#0265cb"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_20"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#001a65"
+                android:onClick="onClick"
+                android:tag="doodle_color_#001a65"/>
+            <ImageView
+                android:id="@+id/btn_doodle_color_21"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#3e0067"
+                android:onClick="onClick"
+                android:tag="doodle_color_#3e0067"/>
+            <ImageView
+                android:id="@+id/btn_doodle_color_22"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#75008c"
+                android:onClick="onClick"
+                android:tag="doodle_color_#75008c"/>
+            <ImageView
+                android:id="@+id/btn_doodle_color_23"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#ff2e8c"
+                android:onClick="onClick"
+                android:tag="doodle_color_#ff2e8c"/>
+
+            <ImageView
+                android:id="@+id/btn_doodle_color_24"
+                android:layout_width="@dimen/doodle_color_button_size"
+                android:layout_height="@dimen/doodle_color_button_size"
+                android:layout_margin="@dimen/doodle_color_button_margin"
+                android:background="#febad3"
+                android:onClick="onClick"
+                android:tag="doodle_color_#febad3"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
